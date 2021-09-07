@@ -15,9 +15,9 @@ int main()
     for (int i = 0; i < n; i++)
     {
         currSum = currSum + a[i];
-        if (currSum < 0)
+        if (currSum < a[i])
         {
-            currSum = 0;
+            currSum = a[i];
         }
         maxSum = max(maxSum,currSum);
     }
